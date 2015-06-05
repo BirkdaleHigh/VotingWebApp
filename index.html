@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote</title>
+  <style>
+    body{
+      height: 100vh;
+      -webkit-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<script>
+document
+  .querySelector('body')
+  .addEventListener('click', function(e){
+//  Get the event object for any browser or firefox
+  e = e || window.event;
+//  Get the window with in any browser
+  var w = window.innerWidth;
+
+  this.style.backgroundColor = (e.pageX > w / 2)? '#bada55' : '#f85959';
+});
+</script>
+</body>
+</html>
