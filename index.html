@@ -29,7 +29,7 @@
       width: 100%;
       height: 100vh;
     }
-    .no,.yes{
+    .choices p{
       margin: 0;
       padding: 0;
       font-size: 20vw;
@@ -37,15 +37,24 @@
       font-weight: bold;
       color:#ccc;
     }
+    p.reset{
+      font-size: 20vh;
+      align-self: flex-end;
+      color: #fff;
+    }
     .vote_yes .no {color:#bada55;}.vote_yes .yes{color:rgb(139,161,67);}
     .vote_no  .yes{color:#f85959;}.vote_no .no{color: rgb(189, 71, 71);}
   </style>
 </head>
 <body>
+
 <div class="choices">
   <p class="no">NO</p>
+  <p class="reset">?</p>
   <p class="yes">YES</p>
 </div>
+
+<!-- Question -->
 
 <script>
 document
