@@ -73,6 +73,20 @@ document
     this.style.backgroundColor = '#f85959';
   }
 });
+
+document
+  .querySelector('.reset')
+  .addEventListener('click',function(e){
+//  Get the event object for any browser or firefox
+  e = e || window.event;
+//  Get the window with in any browser
+  var w = window.innerWidth;
+
+  e.stopPropagation();
+
+  document.querySelector('body').className = "";
+  document.querySelector('body').style.backgroundColor = '#fff';
+});
 </script>
 </body>
 </html>
